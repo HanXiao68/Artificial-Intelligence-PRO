@@ -1,0 +1,2 @@
+dnn/project/search_img/search_img_project/feature/feature filter=lfs diff=lfs merge=lfs -text
+dnn/project/search_img/img_data filter=lfs diff=lfs merge=lfs -text
