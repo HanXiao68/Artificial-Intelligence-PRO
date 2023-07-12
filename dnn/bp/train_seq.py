@@ -26,10 +26,10 @@ model.add(Dense(units=5,input_dim=4,  activation='sigmoid'))
 model.add(Dense(units=10,activation='sigmoid'))
 model.add(Dense(units=3, activation='softmax'))
 model.compile(loss='categorical_crossentropy', optimizer="adam",metrics=['accuracy'])
-print "Starting training "
+print("Starting training ")
 h=model.fit(train_x, train_y, batch_size=8, epochs=500, shuffle=True)
 score = model.evaluate(test_x, test_y)
-print score
+print("score")
 print('Test score:', score[0])
 print('Test accuracy:', score[1])
 path="model_seq.h5"
@@ -37,7 +37,7 @@ model.save(path)
 model=None
 model=load_model(path)
 result=model.predict(test_x)
-print result
+print(result)
 
 
 

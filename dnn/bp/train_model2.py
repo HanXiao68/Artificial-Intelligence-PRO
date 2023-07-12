@@ -29,7 +29,7 @@ output=Dense(units=3, activation='softmax')(m)
 model = Model(inputs=feature_input, outputs=output)
 model.compile(optimizer='adam', loss='categorical_crossentropy',metrics=["accuracy"])
 train_x,train_y=read_data("data")
-model.fit(train_x, train_y, batch_size=8, epochs=100, shuffle=True)
+model.fit(train_x, train_y, batch_size=8, epochs=300, shuffle=True)
 
 
 
